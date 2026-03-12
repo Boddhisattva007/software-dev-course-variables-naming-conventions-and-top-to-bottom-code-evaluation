@@ -24,9 +24,12 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let userFirstName = "Alice";
+let userLastName = "Smith"
+let itemQuant = 5;
+let individualItemPrice = 4;
+let itemPriceTotal = itemQuant * individualItemPrice;
+let itemPriceTotalWithTax = itemPriceTotal + (itemPriceTotal * 0.07);
+let finalTransaction = userFirstName + " " + userLastName + " bought " + itemQuant + " items total that cost $ " + individualItemPrice + " per item. With tax, the total purchase price is: $ " + itemPriceTotalWithTax +  ".";
 
-console.log(d);
+console.log(finalTransaction);
